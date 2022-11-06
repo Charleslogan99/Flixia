@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+<style>
+     body{
+    background-color: ghostwhite;
+   }
+    .jumbotron{
+        background-color: slategrey;
+      
+        height: 40vh;
+        width: 100%;
+    }
+    h1{
+        text-align: center;
+        font-size: 4rem;
+        padding: 3rem;
+        color: azure;
+    }
+    p{
+    
+        text-align: center;
+        
+        color: white;
+        font-size: 1.2rem;
+    }
+    form{
+        align-items: center;
+        justify-content: center;
+
+        margin: 4rem;
+    }
+    
+    .form-container{
+        width: 100%;
+    }
+    select{
+        
+        align-self: center;
+        justify-content: center;
+        width: 100%;
+        /* height: 5vh; */
+    }
+    
+    input{
+        width: 100%;
+    }
+    textarea{
+        width: 100%;
+    }
+
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="d-flex nav-wrapper">
+                    <!-- Logo -->
+                    <a class="nav-logo" href="index.html">
+                    <img src="Logo.jpeg" class="nav" alt="logo">
+                    </a>
+                    <!--Menu Links-->
+                    <div class="d-flex nav-menu">
+                      
+                    </div>
+                 
+            </div>
+        </nav>
+        <br>
+   <div class="jumbotron">
+    <div class="container">
+    <h1>Contact Us</h1>
+    <p>Contact the help team</p>
+    </div>
+   </div>
+
+   <div class="container">
+   <div class="form-container">
+    <form>
+        <label for="">What can we help you with?</label><br>
+        <select name="" id="">
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+        <br>
+        <br>
+        <label for="name">Your name:</label><br>
+        <input type="text" placeholder=" Enter your name">
+        <br>
+        <br>
+        <label for="name">Email address associated with your Flixia account:</label><br>
+        <input type="email" placeholder=" Example@example.com">
+        <br>
+        <br>
+        <label for="name">Subject:</label><br>
+        <input type="text">
+        <br>
+        <br>
+        <label for="name">Details:</label><br>
+        <textarea name="" id="" placeholder="  Please write your question or description of the problem you are trying to solve here." cols="30" rows="10"></textarea>
+        <br>
+        <button class="btn btn-lg btn-warning">Submit</button>
+    </form>
+   </div>
+   </div>
+   
+
+
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

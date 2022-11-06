@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+label,
+input{
+    display: block;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    --purple: #9a0cea;
+    --lightblue:#54b5d1;
+    background: linear-gradient(to right, var(--lightblue),var(--purple));
+}
+
+form{
+    background-color: white;
+    min-width: 300px;
+    padding: 1rem 1.5rem;
+    position: relative;
+}
+
+form h2{
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+.cancel-btn{
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    background-color: transparent;
+    font-size: 1rem;
+    color: #555;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.form-group{
+    margin: 1rem 0;
+}
+
+.form-group label{
+    font-size: .9rem;
+    color: #555;
+    margin-bottom: .3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+.form-control{
+    display: block;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: .5rem 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    color: #555;
+}
+
+.form-control:focus {
+    outline: none;
+}
+
+
+.form-control:invalid{
+    border: 1px solid red;
+}
+
+.form-control:valid{
+    border: 1px solid green;
+}
+
+form p{
+    margin: .5rem 0;
+}
+
+
+.form-link{
+    color: var(--lightblue);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: .85rem;
+}
+
+.form-btn{
+    display: block;
+    width: 100%;
+    padding: .5rem;
+    font-size: .85rem;
+    color: #fff;
+    cursor: pointer;
+    background: linear-gradient(to right, var(--lightblue),var(--purple));
+    border: none;
+}
+
+.login:hover{
+color: green;
+}
+
+.signup{
+    text-align: center;
+    color: #555;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: .85rem;
+    margin-top: .5rem;
+}
+
+
+input{
+    border-radius: 5rem;
+}

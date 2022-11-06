@@ -1,0 +1,236 @@
+/* RESETS  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    
+
+}
+
+/* Variable */
+:root{
+    --primary-color: #333;
+}
+
+/* Utilities */
+
+.container{
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+
+/* Main Style */
+header {
+    min-height: 100vh;
+    position: relative;
+    background: linear-gradient(to top right, #d1f2fc, #f2d9de);
+}
+
+header::after{
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 2;
+    width: 30%;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 3;
+    background-color: transparent;
+}
+
+nav{
+    z-index: 5;
+    position: relative;
+    padding: 1rem 0;
+}
+
+
+.nav-wrapper{
+    justify-content: space-between;
+}
+
+.nav-menu ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    
+}
+
+nav-logo{
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img{
+    width: 150px;
+    object-fit: contain;    
+}
+
+.nav-link{
+    display: inline-block;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    color:var(--primary-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-link:hover{
+  
+    
+    border-radius: 5rem;
+    background-color: #fff;
+    text-decoration: none;
+    color:var(--primary-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-option-btn{
+    display: inline-block;
+    padding: .8rem 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    border: none;
+    background-color: orange;
+    color: var(--primary-color);
+   border-radius: 20px;
+}
+
+.nav-option-btn:hover{
+  
+    cursor: pointer;
+    background-color: #999;
+    font-weight: 600;
+    text-transform: capitalize;
+    border: none;
+    /* background-color: orange; */
+    color: var(--primary-color);
+   border-radius: 20px;
+}
+.btn{
+    width: 110px;
+}
+
+
+
+.download-btn-container {
+    margin-top: 1rem;
+    
+    display: flex;
+    position: absolute;
+}
+
+/*.download-btn{
+    display: inline-block;
+    padding: .6rem 1.5rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: .85rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}*/
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 8px 10px;
+    margin: auto;
+    width: 100%;
+    background-color:var(--primary-color);
+    color: white;
+    text-align: center;
+    z-index: 3;
+}
+
+.hero-section{
+      width: 60%;
+      padding: 4rem 0;
+      position: relative;
+      z-index: 5;
+}
+
+.container-md{
+    width: 60%;
+    max-width: 1024px;
+    margin: 0 auto;
+
+    display: flex;
+}
+
+.text-container{
+    flex: .7;
+}
+
+.image-container{
+    flex: .3;
+    position: relative;
+    animation-name: movement;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    float: inline-start;
+}
+
+@keyframes movement {
+    0% {
+        top: 30px;
+        left: 0px;
+    }
+
+    25%{
+        top: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+.jumbo-text{
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.image-container img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600px;
+
+}
+
+.paragraph{
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #555;
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+
+.paragraph strong{
+    color: #fc543d;
+}
+
+.img{
+    margin-left: 5rem;
+    width: 500px;
+    height: 400px;
+}
+
+
+
+footer{
+    background-color: gray;
+    height: 100%;
+
+}
